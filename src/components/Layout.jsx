@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import BackToTop from './BackToTop.jsx'
 
 const links = [
   { to: '/', label: 'Domů', end: true },
@@ -39,6 +40,7 @@ function Layout() {
       </header>
       <main>
         <Outlet />
+        <BackToTop />
       </main>
       <footer id="site-footer">
         <div className="footer-grid">
