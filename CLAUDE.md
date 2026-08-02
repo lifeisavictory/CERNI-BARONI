@@ -36,6 +36,17 @@ React 19 + Vite 8 SPA, plain JavaScript/JSX (no TypeScript), client-side routing
 - No `src/assets/` directory currently exists — all real assets (e.g. `favicon.svg`) live in `public/` and are referenced by absolute path, served as-is. If JS-imported assets are added later, put them under `src/assets/` so Vite processes them.
 - ESLint config (`eslint.config.js`) is flat-config style: `@eslint/js` recommended rules + `eslint-plugin-react-hooks` + `eslint-plugin-react-refresh` (Vite variant), targeting `**/*.{js,jsx}` with browser globals and JSX enabled. `dist/` is ignored.
 
+## Deployment
+
+Hosted on Rosti.cz (Rosti Pages, a static-site product) via the `rosticli` CLI. The site is linked to an existing Rosti Pages page named `dist` (`page_id=30`, domain `dist-30.rostiapp.cz`).
+
+1. `npm run build` — produces the static site in `dist/`.
+2. `cd dist`
+3. One-time per machine/checkout: `rosticli pages init --page-id=30` — links this directory to the existing Rosti Pages page non-interactively (the plain `rosticli pages init` prompts interactively for "create new" vs "use existing page", which doesn't work well through a piped/non-tty shell — always prefer the `--page-id` flag over answering the prompts). This writes `.rostistate` (gitignored, machine-local) into `dist/`.
+4. `rosticli pages push` — uploads the built files, diffed against the remote manifest (only changed files are transferred). Run this for every subsequent deploy — no need to re-run `init`.
+
+If `rosticli` isn't authenticated yet, a command will fail asking for login (`rosticli login`) — handle that interactively when it comes up rather than assuming a token is already present.
+
 ## Content accuracy
 
 Historical facts are compiled from public journalistic/archival sources; the full citation list lives on the `/zdroje` page and mirrors the `sources` array in `src/data/content.js`. Figures/estimates vary slightly between sources — this is expected and should be reflected as approximate (e.g. "40 až 60 tisíc") rather than resolved to a false precision. The Švandrlík book/film are fiction/satire, not historical sources, and should not be cited as fact.
