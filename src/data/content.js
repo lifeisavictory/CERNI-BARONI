@@ -98,6 +98,12 @@ export const sources = [
     publisher: 'Reflex.cz',
     url: 'https://www.reflex.cz/clanek/causy/74556/svejk-terazky-a-malinkaty-dabel-aneb-kde-hledali-spisovatele-inspiraci-pro-sve-slavne-hrdiny.html',
   },
+  {
+    id: 'romea-ptp-romove',
+    title: 'Před 60 lety zanikly armádní Pomocné technické prapory. Chodili do nich i Romové',
+    publisher: 'Romea.cz',
+    url: 'https://romea.cz/cz/domaci/pred-60-lety-zanikly-armadni-pomocne-technicke-prapory-chodili-do-nich-i-romove',
+  },
 ]
 
 export const timeline = [
@@ -192,5 +198,7 @@ export const bookInfo = {
 export const originIntro = `Pomocné technické prapory (PTP), lidově přezdívané „černí baroni“, byly zvláštní pracovní útvary Československé lidové armády. V letech 1950–1954 jimi prošlo podle odhadů 40 až 60 tisíc mužů, které komunistický režim považoval za politicky nespolehlivé — a zároveň v nich viděl levnou pracovní sílu pro těžký průmysl a stavebnictví.`
 
 export const nicknameOrigin = `Přezdívka „černí baroni“ má dvojí vysvětlení, která se navzájem nevylučují: „černí“ podle černých, zcela neoznačených výložek na uniformách (bez hodnostních označení, jaká měli ostatní vojáci), „baroni“ proto, že šlo o jediné vojáky základní služby, kteří měli k dispozici hotové peníze — část mzdy za odvedenou práci totiž dostávali vyplacenou v hotovosti, což bylo mezi vojáky základní služby neobvyklé.`
+
+export const otherGroupsNote = `Kategorie „E“ ale nebyla jediným důvodem k zařazení do PTP. V praporech se z podobných, čistě diskriminačních důvodů ocitali i Romové — kvůli dobovým protiromským předsudkům tehdejšího režimu. Teprve postupem času, jak armádě nestačil počet mužů odvedených čistě podle politických kritérií, začali do praporů narukovávat i muži s kriminální minulostí, například odsouzení za krádeže.`
 
 export const conditionsText = `Lehké PTP nasazovaly muže na stavební práce, těžké PTP především na dobývání uhlí a rud v dolech. Bezpečnost práce byla druhořadá, prvořadé bylo plnění výrobních norem. Životní podmínky se blížily táborovému režimu: kasárenský dril spojený s fyzicky nejnáročnější a nejnebezpečnější prací tehdejšího průmyslu. Mzda vojáků byla oproti civilním pracovníkům snížena v průměru o 30 %, přičemž vojenská správa si z vydělaných peněz ponechávala 70 až 90 % jako „úhradu“ nákladů na ubytování a stravu. Službu u PTP nepřežilo podle odhadů kolem 400 mužů.`

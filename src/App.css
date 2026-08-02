@@ -358,13 +358,18 @@ main > section > h1 {
   border: 2px solid var(--accent);
   box-sizing: border-box;
   z-index: 1;
+  transition:
+    width 0.25s,
+    height 0.25s,
+    background-color 0.25s,
+    box-shadow 0.25s;
 
   @media (max-width: 680px) {
     left: 19px;
   }
 }
 
-.timeline-zigzag li:last-child .tz-node {
+.timeline-zigzag li.is-active .tz-node {
   width: 17px;
   height: 17px;
   background: var(--accent);
