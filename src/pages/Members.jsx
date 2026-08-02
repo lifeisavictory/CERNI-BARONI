@@ -1,4 +1,4 @@
-import { notablePeople, nobilityNote } from '../data/content.js'
+import { notablePeople, nobilityNote, memoryOfNationNote, memoryOfNationUrl } from '../data/content.js'
 
 function Members() {
   return (
@@ -14,7 +14,7 @@ function Members() {
       </section>
 
       <section>
-        <h2>Doložené osobnosti</h2>
+        <h2>Známé osobnosti</h2>
         <div className="person-list">
           {notablePeople.map((person) => (
             <article key={person.name} className="person">
@@ -29,8 +29,19 @@ function Members() {
       </section>
 
       <section>
-        <h2>Šlechta v PTP</h2>
+        <h2>Šlechtické rody</h2>
         <p>{nobilityNote}</p>
+      </section>
+
+      <section>
+        <h2>Další příběhy</h2>
+        <p>
+          {memoryOfNationNote}{' '}
+          <a href={memoryOfNationUrl} target="_blank" rel="noreferrer">
+            Přejít na sekci PTP v archivu Paměť národa
+          </a>
+          .
+        </p>
       </section>
     </>
   )

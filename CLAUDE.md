@@ -19,7 +19,7 @@ React 19 + Vite 8 SPA, plain JavaScript/JSX (no TypeScript), client-side routing
 
 - Entry point: `index.html` (contains SEO/OG meta tags and Google Fonts links) → `src/main.jsx` wraps `<App />` in `<BrowserRouter>` and `<StrictMode>`, mounting into `#root`.
 - **Routing** (`src/App.jsx`): all routes are nested under a single `<Layout>` element via `react-router-dom`'s `<Routes>`/`<Route>`. Adding a page means: create `src/pages/NewPage.jsx`, add a `<Route path="..." element={<NewPage />} />` in `App.jsx`, and add a corresponding link in `src/components/Layout.jsx`'s `links` array (used for both header nav and footer nav).
-- **Content/component separation**: all page text — timelines, source lists, biography entries, long-form paragraphs — lives in `src/data/content.js` as named exported constants (e.g. `sources`, `timeline`, `categories`, `notablePeople`, `bookInfo`, plus standalone prose strings like `originIntro`, `nicknameOrigin`, `conditionsText`). Page components (`src/pages/*.jsx`) import from this file rather than embedding prose inline. When editing factual/historical content, edit `content.js`; when editing layout/presentation, edit the page component.
+- **Content/component separation**: all page text — timelines, source lists, biography entries, long-form paragraphs — lives in `src/data/content.js` as named exported constants (e.g. `sources`, `timeline`, `categories`, `notablePeople`, `bookInfo`, plus standalone prose strings like `originIntro`, `nicknameOrigin`, `conditionsText`, `memoryOfNationNote`). Page components (`src/pages/*.jsx`) import from this file rather than embedding prose inline. When editing factual/historical content, edit `content.js`; when editing layout/presentation, edit the page component.
 - `src/components/Layout.jsx` renders the shared header (with a hamburger nav that collapses below 768px, tracked via local `isMenuOpen` state), the routed `<Outlet />`, and a shared footer with a duplicate nav + contact link.
 - Site pages and their routes/data source:
 
@@ -27,13 +27,13 @@ React 19 + Vite 8 SPA, plain JavaScript/JSX (no TypeScript), client-side routing
   |---|---|---|
   | `/` | `Home.jsx` | `originIntro` |
   | `/vznik` | `Origin.jsx` | `timeline`, `nicknameOrigin`, `conditionsText` |
-  | `/prislusnici` | `Members.jsx` | `categories`, `notablePeople`, `nobilityNote` |
+  | `/prislusnici` | `Members.jsx` | `categories`, `notablePeople`, `nobilityNote`, `memoryOfNationNote`, `memoryOfNationUrl` |
   | `/kniha` | `Book.jsx` | `bookInfo` |
   | `/zdroje` | `Sources.jsx` | `sources` |
   | `/ochrana-soukromi` | `Privacy.jsx` | (static text) |
 
-- **Styling**: `src/index.css` defines global design tokens as CSS custom properties on `:root` (`--text`, `--bg`, `--page-bg`, `--accent`, `--border`, `--shadow`, font stacks `--sans`/`--heading`/`--mono`), with a dark-theme override block under `@media (prefers-color-scheme: dark)`. Always reuse these tokens instead of hardcoding colors/fonts. `src/App.css` holds component/layout-scoped styles using native CSS nesting (targets modern browsers per Vite's default build — no PostCSS nesting plugin). Fonts: Fraunces (headings), Inter (body), IBM Plex Mono (nav/labels).
-- Static assets imported in JS (`src/assets/`) are processed by Vite; assets referenced by absolute path (`public/favicon.svg`, etc.) are served as-is.
+- **Styling**: `src/index.css` defines global design tokens as CSS custom properties on `:root` (`--text`, `--text-h`, `--bg`, `--page-bg`, `--border`, `--accent`, `--accent-bg`, `--accent-border`, `--shadow`, font stacks `--sans`/`--heading`/`--mono`), with a dark-theme override block under `@media (prefers-color-scheme: dark)`. Always reuse these tokens instead of hardcoding colors/fonts. `src/App.css` holds component/layout-scoped styles using native CSS nesting (targets modern browsers per Vite's default build — no PostCSS nesting plugin). Fonts: Fraunces (headings), Inter (body), IBM Plex Mono (nav/labels).
+- No `src/assets/` directory currently exists — all real assets (e.g. `favicon.svg`) live in `public/` and are referenced by absolute path, served as-is. If JS-imported assets are added later, put them under `src/assets/` so Vite processes them.
 - ESLint config (`eslint.config.js`) is flat-config style: `@eslint/js` recommended rules + `eslint-plugin-react-hooks` + `eslint-plugin-react-refresh` (Vite variant), targeting `**/*.{js,jsx}` with browser globals and JSX enabled. `dist/` is ignored.
 
 ## Content accuracy
