@@ -50,7 +50,15 @@ function Privacy() {
       </section>
 
       <section>
-        <p className="source-publisher">Poslední aktualizace: 1. srpna 2026.</p>
+        <h2>5. Tvorba obsahu</h2>
+        <p>
+          Texty na tomto webu byly připraveny s pomocí AI na základě zdrojů uvedených na stránce{' '}
+          <a href="/zdroje">Zdroje</a> a před zveřejněním prošly věcnou kontrolou autora.
+        </p>
+      </section>
+
+      <section>
+        <p className="source-publisher">Poslední aktualizace: 3. srpna 2026.</p>
       </section>
     </>
   )
