@@ -38,14 +38,18 @@ React 19 + Vite 8 SPA, plain JavaScript/JSX (no TypeScript), client-side routing
 
 ## Deployment
 
-Hosted on Rosti.cz (Rosti Pages, a static-site product) via the `rosticli` CLI. The site is linked to an existing Rosti Pages page named `dist` (`page_id=30`, domain `dist-30.rostiapp.cz`).
+Hosted on Rosti.cz (Rosti Pages, a static-site product) via the `rosticli` CLI. The site is linked to an existing Rosti Pages page named `cernibaroni` (`page_id=33`, domain `cernibaroni-33.rostiapp.cz`).
 
 1. `npm run build` — produces the static site in `dist/`.
 2. `cd dist`
-3. One-time per machine/checkout: `rosticli pages init --page-id=30` — links this directory to the existing Rosti Pages page non-interactively (the plain `rosticli pages init` prompts interactively for "create new" vs "use existing page", which doesn't work well through a piped/non-tty shell — always prefer the `--page-id` flag over answering the prompts). This writes `.rostistate` (gitignored, machine-local) into `dist/`.
+3. One-time per machine/checkout: `rosticli pages init --page-id=33` — links this directory to the existing Rosti Pages page non-interactively (the plain `rosticli pages init` prompts interactively for "create new" vs "use existing page", which doesn't work well through a piped/non-tty shell — always prefer the `--page-id` flag over answering the prompts). This writes `.rostistate` (gitignored, machine-local) into `dist/`.
 4. `rosticli pages push` — uploads the built files, diffed against the remote manifest (only changed files are transferred). Run this for every subsequent deploy — no need to re-run `init`.
 
 If `rosticli` isn't authenticated yet, a command will fail asking for login (`rosticli login`) — handle that interactively when it comes up rather than assuming a token is already present.
+
+## Git
+
+Local commits are fine when requested, but **never run `git push`** — pushing to GitHub is always done by the user themselves.
 
 ## Content accuracy
 
