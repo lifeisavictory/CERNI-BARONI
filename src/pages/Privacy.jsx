@@ -29,15 +29,11 @@ function Privacy() {
 
       <section>
         <h2>3. Externí služby</h2>
-        <p>Web využívá jednu externí službu pro zajištění typografie (tzv. CDN):</p>
-        <ul className="chip-list">
-          <li>Google Fonts (písma Fraunces, Inter, IBM Plex Mono)</li>
-        </ul>
         <p>
-          Tato služba může při načítání písem zaznamenat vaši IP adresu a technické údaje o prohlížeči. Toto
-          zpracování probíhá u poskytovatele (Google) v souladu s jeho vlastními pravidly ochrany soukromí. Stránka{' '}
-          <a href="/zdroje">Zdroje</a> dále obsahuje odkazy na externí novinářské a archivní weby třetích stran — při
-          jejich návštěvě se řídí ochrana soukromí pravidly daného webu.
+          Písma (Fraunces, Inter, IBM Plex Mono) jsou součástí webu a načítají se přímo z jeho serveru — web tedy
+          nepoužívá žádné CDN třetí strany pro typografii a při načítání písem se ke Google ani jinému poskytovateli
+          neodesílají žádná data. Stránka <a href="/zdroje">Zdroje</a> obsahuje odkazy na externí novinářské a
+          archivní weby třetích stran — při jejich návštěvě se řídí ochrana soukromí pravidly daného webu.
         </p>
       </section>
 
@@ -58,7 +54,7 @@ function Privacy() {
       </section>
 
       <section>
-        <p className="source-publisher">Poslední aktualizace: 3. srpna 2026.</p>
+        <p className="source-publisher">Poslední aktualizace: 7. srpna 2026.</p>
       </section>
     </>
   )
