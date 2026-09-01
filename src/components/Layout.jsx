@@ -64,7 +64,9 @@ function Layout() {
           </div>
         </div>
         <p className="contact-bar">
-          <a href="mailto:tomas@lifeisavictory.com">tomas@lifeisavictory.com</a>
+          <a href="mailto:tomas@salamanek.cz?subject=Dotaz%20z%20webu%20cernibaroni.cz">
+            tomas@salamanek.cz
+          </a>
         </p>
       </footer>
     </>
