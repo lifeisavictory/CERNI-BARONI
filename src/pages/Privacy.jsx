@@ -1,6 +1,10 @@
+import PageMeta from '../components/PageMeta.jsx'
+import { pageMeta } from '../data/content.js'
+
 function Privacy() {
   return (
     <>
+      <PageMeta {...pageMeta.privacy} />
       <section>
         <p className="eyebrow">Právní informace</p>
         <h1>Ochrana soukromí</h1>

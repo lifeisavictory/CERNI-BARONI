@@ -202,3 +202,47 @@ export const nicknameOrigin = `Přezdívka „černí baroni“ má dvojí vysv�
 export const otherGroupsNote = `Kategorie „E“ ale nebyla jediným důvodem k zařazení do PTP. V praporech se z podobných, čistě diskriminačních důvodů ocitali i Romové — kvůli dobovým protiromským předsudkům tehdejšího režimu. Teprve postupem času, jak armádě nestačil počet mužů odvedených čistě podle politických kritérií, začali do praporů narukovávat i muži s kriminální minulostí, například odsouzení za krádeže.`
 
 export const conditionsText = `Lehké PTP nasazovaly muže na stavební práce, těžké PTP především na dobývání uhlí a rud v dolech. Bezpečnost práce byla druhořadá, prvořadé bylo plnění výrobních norem. Životní podmínky se blížily táborovému režimu: kasárenský dril spojený s fyzicky nejnáročnější a nejnebezpečnější prací tehdejšího průmyslu. Mzda vojáků byla oproti civilním pracovníkům snížena v průměru o 30 %, přičemž vojenská správa si z vydělaných peněz ponechávala 70 až 90 % jako „úhradu“ nákladů na ubytování a stravu. Službu u PTP nepřežilo podle odhadů kolem 400 mužů.`
+
+export const siteUrl = 'https://cernibaroni.cz'
+
+export const pageMeta = {
+  home: {
+    path: '/',
+    title: 'Černí baroni — Pomocné technické prapory',
+    description:
+      'Informační web o Pomocných technických praporech (PTP) — takzvaných černých baronech — v Československu 1950–1954: jejich vznik, příslušníci, osudy, včetně připomínky satirické knihy a filmu Miloslava Švandrlíka.',
+  },
+  origin: {
+    path: '/vznik',
+    title: 'Jak vznikly PTP — Černí baroni',
+    description:
+      'Vznik a fungování Pomocných technických praporů: od silničních praporů roku 1948 přes vznik PTP v roce 1950 až po jejich zrušení v květnu 1954, původ přezdívky „černí baroni“ a životní podmínky.',
+  },
+  members: {
+    path: '/prislusnici',
+    title: 'Kdo prošel PTP — Černí baroni',
+    description:
+      'Příslušníci Pomocných technických praporů: kategorie „politicky nespolehlivých“ — kněží, sedláci, šlechtici i synové továrníků — a konkrétní doložené osudy.',
+  },
+  book: {
+    path: '/kniha',
+    title: 'Kniha a film Černí baroni — Miloslav Švandrlík',
+    description:
+      'Satirický román Miloslava Švandrlíka Černí baroni aneb Válčili jsme za Čepičku (1969), jeho filmová adaptace z roku 1992 a zámek Zelená Hora — a proč nejde o historický pramen.',
+  },
+  sources: {
+    path: '/zdroje',
+    title: 'Zdroje — Černí baroni',
+    description:
+      'Seznam veřejně dostupných novinářských a historických zdrojů, ze kterých web o Pomocných technických praporech (PTP) čerpá.',
+  },
+  privacy: {
+    path: '/ochrana-soukromi',
+    title: 'Ochrana soukromí — Černí baroni',
+    description: 'Zásady ochrany soukromí webu cernibaroni.cz.',
+  },
+  notFound: {
+    title: 'Stránka nenalezena — Černí baroni',
+    description: 'Požadovaná stránka na webu cernibaroni.cz neexistuje.',
+  },
+}

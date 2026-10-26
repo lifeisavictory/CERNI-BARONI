@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
-import { originIntro } from '../data/content.js'
+import PageMeta from '../components/PageMeta.jsx'
+import { originIntro, pageMeta } from '../data/content.js'
 
 function Home() {
   return (
     <>
+      <PageMeta {...pageMeta.home} />
       <section className="hero-text">
         <p className="eyebrow">1950–1954 · Československá lidová armáda</p>
         <h1>Černí baroni</h1>

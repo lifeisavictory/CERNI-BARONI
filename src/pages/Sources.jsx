@@ -1,8 +1,10 @@
-import { sources } from '../data/content.js'
+import PageMeta from '../components/PageMeta.jsx'
+import { sources, pageMeta } from '../data/content.js'
 
 function Sources() {
   return (
     <section>
+      <PageMeta {...pageMeta.sources} />
       <p className="eyebrow">Zdroje</p>
       <h1>Odkud web čerpá</h1>
       <p className="lead">

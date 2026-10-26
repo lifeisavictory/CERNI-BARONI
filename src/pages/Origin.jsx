@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { timeline, nicknameOrigin, conditionsText, categories, otherGroupsNote } from '../data/content.js'
+import PageMeta from '../components/PageMeta.jsx'
+import { timeline, nicknameOrigin, conditionsText, categories, otherGroupsNote, pageMeta } from '../data/content.js'
 
 function Origin() {
   const itemRefs = useRef([])
@@ -24,6 +25,7 @@ function Origin() {
 
   return (
     <>
+      <PageMeta {...pageMeta.origin} />
       <section>
         <p className="eyebrow">Vznik a fungování</p>
         <h1>Jak vznikly PTP</h1>

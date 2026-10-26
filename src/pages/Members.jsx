@@ -1,8 +1,10 @@
-import { notablePeople, nobilityNote, memoryOfNationNote, memoryOfNationUrl } from '../data/content.js'
+import PageMeta from '../components/PageMeta.jsx'
+import { notablePeople, nobilityNote, memoryOfNationNote, memoryOfNationUrl, pageMeta } from '../data/content.js'
 
 function Members() {
   return (
     <>
+      <PageMeta {...pageMeta.members} />
       <section>
         <p className="eyebrow">Příslušníci a osudy</p>
         <h1>Kdo prošel PTP</h1>

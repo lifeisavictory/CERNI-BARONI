@@ -8,6 +8,7 @@ import Members from './pages/Members.jsx'
 import Book from './pages/Book.jsx'
 import Sources from './pages/Sources.jsx'
 import Privacy from './pages/Privacy.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="kniha" element={<Book />} />
           <Route path="zdroje" element={<Sources />} />
           <Route path="ochrana-soukromi" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>

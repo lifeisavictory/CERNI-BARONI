@@ -1,8 +1,10 @@
-import { bookInfo } from '../data/content.js'
+import PageMeta from '../components/PageMeta.jsx'
+import { bookInfo, pageMeta } from '../data/content.js'
 
 function Book() {
   return (
     <>
+      <PageMeta {...pageMeta.book} />
       <section>
         <p className="eyebrow">Kniha a film</p>
         <h1>
