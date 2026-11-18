@@ -14,6 +14,12 @@ dist-ssr
 
 docs/
 
+# Textový výpis obsahu k ověření pravdivosti jinou AI – generátor i výstup jsou jen lokální
+/scripts/overeni-pravdivosti.mjs
+/overeni-pravdivosti*.txt
+/overeni-*-nalezy.md
+/zaver-overeni*.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

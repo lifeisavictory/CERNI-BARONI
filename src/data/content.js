@@ -99,6 +99,12 @@ export const sources = [
     url: 'https://www.reflex.cz/clanek/causy/74556/svejk-terazky-a-malinkaty-dabel-aneb-kde-hledali-spisovatele-inspiraci-pro-sve-slavne-hrdiny.html',
   },
   {
+    id: 'ctk-slechta-majetek',
+    title: 'Šlechta a její majetkové nároky na území České republiky',
+    publisher: 'ČTK / České noviny',
+    url: 'https://www.ceskenoviny.cz/zpravy/46384',
+  },
+  {
     id: 'romea-ptp-romove',
     title: 'Před 60 lety zanikly armádní Pomocné technické prapory. Chodili do nich i Romové',
     publisher: 'Romea.cz',
@@ -121,11 +127,11 @@ export const timeline = [
   },
   {
     year: 'prosinec 1951',
-    text: 'PTP dosahují vrcholné síly: 11 lehkých a 6 těžkých praporů plus 2 technické prapory, celkem přes 22 000 mužů.',
+    text: 'PTP tvoří 11 lehkých a 6 těžkých praporů plus 2 technické prapory, celkem přes 22 000 mužů. Počty dál rostly — podle historika Jiřího Bílka bylo koncem roku 1952 ve dvaceti praporech na 25 000 osob.',
   },
   {
     year: 'květen 1953',
-    text: 'Měnová reforma znehodnocuje vojákům jejich vynucené úspory v poměru 50:1 — nejhorším možném kurzu.',
+    text: 'Měnová reforma znehodnocuje vojákům jejich vynucené úspory v poměru 50:1 — v nejhorším možném kurzu.',
   },
   {
     year: '1953–1954',
@@ -137,11 +143,11 @@ export const timeline = [
   },
   {
     year: '1991–1992',
-    text: 'Zákony č. 87/1991 Sb. a č. 267/1992 Sb. umožňují soudní a společenskou rehabilitaci bývalých příslušníků PTP.',
+    text: 'Zákon č. 87/1991 Sb. o mimosoudních rehabilitacích a jeho novela č. 267/1992 Sb. umožňují rehabilitaci bývalých příslušníků PTP.',
   },
   {
     year: '2002',
-    text: 'Vláda ČR schvaluje jednorázové odškodnění 625 Kč za každý započatý měsíc služby delší než jeden rok.',
+    text: 'Nařízení vlády č. 102/2002 Sb. přiznává žijícím bývalým příslušníkům, kteří byli u PTP zařazeni déle než jeden rok, jednorázové odškodnění 625 Kč za každý započatý měsíc služby.',
   },
 ]
 
@@ -161,45 +167,45 @@ export const notablePeople = [
     name: 'Zdeněk Sternberg',
     years: '1923–2021',
     role: 'hrabě ze starobylého šlechtického rodu Šternberků, majitel hradu Český Šternberk',
-    text: `Nejlépe zdokumentovaný případ šlechtice v PTP. K vojenské službě u PTP nastoupil 1. října 1950, sloužil mimo jiné v Hrdlovce u Duchcova a později v Ostravě — celkem strávil pět let jako havíř v dolech. Po propuštění směl pracovat jen v podřadných zaměstnáních, later i jako kulisák v divadle. V roce 1968 emigroval s rodinou do Rakouska, po roce 1989 se vrátil do Československa a v roce 1992 získal zpět rodový hrad Český Šternberk, kde žil až do své smrti ve věku 97 let. Jeho postavu (byť fiktivně upravenou) zpopularizoval film Černí baroni z roku 1992, kde ho ztvárnil Václav Vydra.`,
+    text: `Nejlépe zdokumentovaný případ šlechtice v PTP. K vojenské službě u PTP nastoupil 1. října 1950, sloužil u 4. PTP v Hrdlovce u Duchcova a od května 1951 v Karviné — celkem strávil v dolech přes pět let, od roku 1953 už na základě prodlouženého pracovního závazku. Po návratu do Prahy směl pracovat jen v podřadných zaměstnáních, později i jako kulisák v divadle. V roce 1968 emigroval s rodinou do Rakouska, po roce 1989 se vrátil do Československa a v roce 1992 získal zpět rodový hrad Český Šternberk, kde žil až do své smrti ve věku 97 let. Jeho postavu (byť fiktivně upravenou) zpopularizoval film Černí baroni z roku 1992, kde ho ztvárnil Václav Vydra.`,
   },
   {
     name: 'Miloslav Švandrlík',
-    years: '1932–2011',
+    years: '1932–2009',
     role: 'spisovatel, autor knihy Černí baroni',
     text: `Vojenskou službu absolvoval v letech 1953–1955 u Technických praporů (TP) v západních a jižních Čechách. Vlastní zážitky z vojny později zpracoval do satirického románu Černí baroni, který se stal klíčovým dílem jeho tvorby a přirovnáván bývá k Haškovu Švejkovi.`,
   },
   {
     name: 'Zdeněk Sirový',
-    years: '1932–2010',
+    years: '1932–1995',
     role: 'filmový režisér',
     text: `Sám prošel službou u PTP, což využil při natáčení filmové adaptace Černí baroni (1992) — realizace tak vychází nejen z knihy, ale i z vlastní zkušenosti režiséra.`,
   },
 ]
 
-export const nobilityNote = `Komunistický režim po únoru 1948 zkonfiskoval majetek přibližně devíti set šlechtických rodů. Mužům z těchto rodin, pokud neemigrovali, bylo často znemožněno studium na gymnáziu i běžný kariérní postup a k výkonu základní vojenské služby byli namísto bojových útvarů přidělováni právě k PTP. Jmenovitě je nejlépe doložen případ hraběte Zdeňka Sternberga z rodu Šternberků (viz výše) — u řady dalších starých českých a moravských rodů (Kolowratové, Kinští, Lobkowiczové a další), jejichž majetek byl podobně konfiskován, se dosavadní zdroje shodují na obecném faktu masového zařazování šlechticů do PTP, aniž by k dispozici byl vyčerpávající jmenný seznam.`
+export const nobilityNote = `Do roku 1945 žilo v Československu asi dvě stě rodin, které se počítaly k bývalé šlechtě. O většinu majetku přišly už v letech 1945–1947, zbytek jim odebrala pozemková reforma a konfiskace po únoru 1948. Mužům z těchto rodin, pokud neemigrovali, bylo často znemožněno studium na gymnáziu i běžný kariérní postup a k výkonu základní vojenské služby byli namísto bojových útvarů přidělováni právě k PTP. Jmenovitě je nejlépe doložen případ hraběte Zdeňka Sternberga z rodu Šternberků (viz výše) — u řady dalších starých českých a moravských rodů (Kolowratové, Kinští, Lobkowiczové a další), jejichž majetek byl podobně konfiskován, se dosavadní zdroje shodují na obecném faktu masového zařazování šlechticů do PTP, aniž by k dispozici byl vyčerpávající jmenný seznam.`
 
 export const memoryOfNationNote = `Osobností, které PTP prošly, bylo samozřejmě mnohem víc, než kolik jich dokážeme jmenovitě a ověřeně popsat na tomto webu. Nejrozsáhlejší veřejně dostupnou sbírkou jejich svědectví je archiv Paměť národa, který obsahuje stovky zdokumentovaných příběhů pamětníků PTP — mimo jiné Vladimíra Sekaniny, syna velkostatkáře, který se po únoru 1948 zúčastnil studentské protikomunistické demonstrace, nebo Vladimíra Lopaťuka, bohoslovce z majetné rodiny, který po roce 1989 až do své smrti v roce 2012 stál v čele Ústřední rady svazu PTP a podílel se na připomínání jejich historie. Kdo chce jít do hloubky, najde v archivu desítky dalších plnohodnotných rozhovorů a přepisů.`
 export const memoryOfNationUrl = 'https://www.pametnaroda.cz/cs/ptp-pomocne-technicke-prapory'
 
 export const bookInfo = {
   title: 'Černí baroni',
-  subtitle: 'aneb Válčili jsme za Čepičku',
+  subtitle: 'aneb Válčili jsme za Čepičky',
   author: 'Miloslav Švandrlík',
   illustrator: 'Jiří Winter-Neprakta',
   year: '1969',
   text: `Satirický román Miloslava Švandrlíka vychází z autorových vlastních zážitků z vojenské služby u Technických praporů v letech 1953–1955. Kniha volně navazuje na tradici Haškova Švejka — humorným, nadsázkou prodchnutým způsobem líčí absurditu vojenského drilu a byrokracie v prostředí, kam byli posíláni „politicky nespolehliví“ muži. Je důležité rozlišovat: jde o beletrii a satiru, nikoli o historický pramen — mnohé postavy a situace jsou karikatury a fikce, byť vycházejí z reálného prostředí PTP/TP.`,
   film: `V roce 1992 natočil režisér Zdeněk Sirový, sám bývalý příslušník PTP, filmovou komedii Černí baroni podle vybraných epizod knihy. V hlavních rolích se objevili Ondřej Vetchý jako vojín Kefalín, Pavel Landovský jako major Haluška zvaný Terazky, Bronislav Poloczek jako kapitán Ořech, Alois Švehlík jako kapitán Honec a Jiří Schmitzer jako poručík Hamáček; v dalších rolích si zahráli mj. Miroslav Donutil, Rudolf Hrušínský ml., Daniel Landa, Vladimír Javorský, Boris Rösner nebo Václav Postránecký. Film se stal kultovní záležitostí a dodnes je pro řadu lidí hlavním zdrojem povědomí o fenoménu PTP. V roce 2004 vznikl také televizní seriál se stejným námětem.`,
-  location: `Zámek Zelená Hora u Nepomuku (Plzeňský kraj) není jen filmovou kulisou — Miloslav Švandrlík zde v letech 1953–1956 sám sloužil u 1. technického praporu a své zážitky přímo přetavil do knihy: jedna z kapitol se dokonce jmenuje „Zelená Hora“, hlavní hrdina Roman Kefalín je autorovým alter egem a velitel major Haluška zvaný Terazky měl skutečnou předlohu ve veliteli útvaru Andreji Gazdovi. Filmová adaptace z roku 1992 se proto k místu logicky vrátila i při natáčení. Je ale potřeba rozlišovat: šlo o Technický prapor (TP), běžnou vojenskou jednotku — skuteční příslušníci Pomocných technických praporů (PTP), o nichž tento web pojednává, na Zelené Hoře nikdy nesloužili. Více o historii zámku najdete na `,
+  location: `Zámek Zelená Hora u Nepomuku (Plzeňský kraj) není jen filmovou kulisou — Miloslav Švandrlík zde v letech 1953–1955 sám sloužil u 1. technického praporu a své zážitky přímo přetavil do knihy: jedna z kapitol se dokonce jmenuje „Zelená Hora“, hlavní hrdina Roman Kefalín je autorovým alter egem a velitel major Haluška zvaný Terazky měl skutečnou předlohu ve veliteli útvaru Andreji Gazdovi. Filmová adaptace z roku 1992 se proto k místu logicky vrátila i při natáčení. Je ale potřeba rozlišovat: šlo o Technický prapor (TP), běžnou vojenskou jednotku — skuteční příslušníci Pomocných technických praporů (PTP), o nichž tento web pojednává, na Zelené Hoře nikdy nesloužili. Více o historii zámku najdete na `,
   locationLinkText: 'zamekzelenahora.cz',
   locationLinkUrl: 'https://www.zamekzelenahora.cz/',
 }
 
-export const originIntro = `Pomocné technické prapory (PTP), lidově přezdívané „černí baroni“, byly zvláštní pracovní útvary Československé lidové armády. V letech 1950–1954 jimi prošlo podle odhadů 40 až 60 tisíc mužů, které komunistický režim považoval za politicky nespolehlivé — a zároveň v nich viděl levnou pracovní sílu pro těžký průmysl a stavebnictví.`
+export const originIntro = `Pomocné technické prapory (PTP), lidově přezdívané „černí baroni“, byly zvláštní pracovní útvary Československé lidové armády. V letech 1950–1954 jimi prošlo podle odhadů 40 až 60 tisíc mužů (vyšší odhady zahrnují i navazující Technické prapory), které komunistický režim považoval za politicky nespolehlivé — a zároveň v nich viděl levnou pracovní sílu pro těžký průmysl a stavebnictví.`
 
 export const nicknameOrigin = `Přezdívka „černí baroni“ má dvojí vysvětlení, která se navzájem nevylučují: „černí“ podle černých, zcela neoznačených výložek na uniformách (bez hodnostních označení, jaká měli ostatní vojáci), „baroni“ proto, že šlo o jediné vojáky základní služby, kteří měli k dispozici hotové peníze — část mzdy za odvedenou práci totiž dostávali vyplacenou v hotovosti, což bylo mezi vojáky základní služby neobvyklé.`
 
-export const otherGroupsNote = `Kategorie „E“ ale nebyla jediným důvodem k zařazení do PTP. V praporech se z podobných, čistě diskriminačních důvodů ocitali i Romové — kvůli dobovým protiromským předsudkům tehdejšího režimu. Teprve postupem času, jak armádě nestačil počet mužů odvedených čistě podle politických kritérií, začali do praporů narukovávat i muži s kriminální minulostí, například odsouzení za krádeže.`
+export const otherGroupsNote = `Kategorie „E“ ale nebyla jediným důvodem k zařazení do PTP. V praporech se spolu s Němci a Maďary ocitali i Romové — zřejmě i kvůli dobovým předsudkům vůči nim. Postupem času, patrně i proto, že armádě nestačil počet mužů odvedených podle politických kritérií, začali být do praporů odváděni i muži s kriminální minulostí, například odsouzení za krádeže.`
 
 export const conditionsText = `Lehké PTP nasazovaly muže na stavební práce, těžké PTP především na dobývání uhlí a rud v dolech. Bezpečnost práce byla druhořadá, prvořadé bylo plnění výrobních norem. Životní podmínky se blížily táborovému režimu: kasárenský dril spojený s fyzicky nejnáročnější a nejnebezpečnější prací tehdejšího průmyslu. Mzda vojáků byla oproti civilním pracovníkům snížena v průměru o 30 %, přičemž vojenská správa si z vydělaných peněz ponechávala 70 až 90 % jako „úhradu“ nákladů na ubytování a stravu. Službu u PTP nepřežilo podle odhadů kolem 400 mužů.`
 
@@ -228,7 +234,7 @@ export const pageMeta = {
     path: '/kniha',
     title: 'Kniha a film Černí baroni — Miloslav Švandrlík',
     description:
-      'Satirický román Miloslava Švandrlíka Černí baroni aneb Válčili jsme za Čepičku (1969), jeho filmová adaptace z roku 1992 a zámek Zelená Hora — a proč nejde o historický pramen.',
+      'Satirický román Miloslava Švandrlíka Černí baroni aneb Válčili jsme za Čepičky (1969), jeho filmová adaptace z roku 1992 a zámek Zelená Hora — a proč nejde o historický pramen.',
   },
   sources: {
     path: '/zdroje',
