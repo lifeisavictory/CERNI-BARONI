@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import BackToTop from './BackToTop.jsx'
+import CookieConsent from './CookieConsent.jsx'
+import { otevriNastaveni } from '../lib/souhlas.js'
 
 const links = [
   { to: '/', label: 'Domů', end: true },
@@ -60,6 +62,9 @@ function Layout() {
                 </NavLink>
               ))}
               <NavLink to="/ochrana-soukromi">Ochrana soukromí</NavLink>
+              <button type="button" className="footer-nav-button" onClick={otevriNastaveni}>
+                Nastavení cookies
+              </button>
             </nav>
           </div>
         </div>
@@ -69,6 +74,7 @@ function Layout() {
           </a>
         </p>
       </footer>
+      <CookieConsent />
     </>
   )
 }
